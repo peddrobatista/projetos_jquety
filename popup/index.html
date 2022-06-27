@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Magnific Popup</title>
+</head>
+<body>
+    <a class="teste" href="eufoto.jpg">Abrir imagem</a>
+    <script>
+        $(document).ready(function() {
+
+        $('.teste').magnificPopup({
+            type: 'image',
+            disableOn: 400,
+            key: 'some-key',
+            removalDelay: 300,
+            mainClass: 'mfp-fade'
+        });
+
+        });
+    </script>
+</body>
+</html>
